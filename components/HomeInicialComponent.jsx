@@ -34,47 +34,48 @@ export default function HomeInicialComponent() {
     
 
     function moveCarrosel(num) {
-        if(index>0 && index<4){
+        let newIndex = index;
+        if(newIndex>0 && newIndex<4){
             if(num>0){
-                setIndex(index+1)
+                newIndex+=1
                 
             }else{
-                setIndex(index-1)
+                newIndex-=1
             }
         }
 
-        else if(index==0){
+        else if(newIndex==0){
             if(num>0){
-                
-                setIndex(index+1)
+                newIndex+=1
             }else{
-                setIndex(4)
+                newIndex=4
             }
         }
 
-        else if(index==4){
+        else if(newIndex==4){
             if(num>0){
-                setIndex(0)
+                newIndex=0
             }else{
                 
-                setIndex(index-1)
+                newIndex-=1
             }
         }
-        setImage(vetor[index])
-        setText1(vetorTexto1[index])
-        setText2(vetorTexto2[index])
+        setIndex(newIndex)
+        setImage(vetor[newIndex])
+        setText1(vetorTexto1[newIndex])
+        setText2(vetorTexto2[newIndex])
 
-        pintarBolas();
+        pintarBolas(newIndex);
     }
 
-    function pintarBolas(){
+    function pintarBolas(newIndex){
         const bolas = document.querySelectorAll(".bolas")
         bolas.forEach(element => {
-            if(bolas[index] == element){
+            if(bolas[newIndex] == element){
                 element.classList.add("bg-[#46009F]")
                 element.classList.remove("bg-white")
             }
-            if(bolas[index] != element){
+            if(bolas[newIndex] != element){
                 element.classList.remove("bg-[#46009F]")
                 element.classList.add("bg-white")
             }
