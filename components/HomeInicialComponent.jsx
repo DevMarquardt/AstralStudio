@@ -101,7 +101,7 @@ export default function HomeInicialComponent() {
                                 {text2}
                             </h1>
 
-                            <div className="top-[40rem] fixed w-full h-[15rem] flex justify-center items-center gap-[5rem] duration-300">
+                            <div className="top-[40rem] absolute w-full h-[15rem] flex justify-center items-center gap-[5rem] duration-300">
                                 <button className="w-[16rem] h-[4.5rem] duration-300 bg-[#46009F] rounded-[1.5rem] text-xl font-semibold hover:scale-[1.2]">COMPRE JÁ</button>
                                 <button className="w-[16rem] h-[4.5rem] duration-300 bg-[#46009F] rounded-[1.5rem] text-xl font-semibold hover:scale-[1.2]">ASSISTA O TRAILER</button>
                             </div>
