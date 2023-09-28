@@ -1,8 +1,8 @@
 export default function ValoresComponent() {
     return (
         <>
-            <div className="bg-[#1F1E1E] text-[#F4ECFF] overflow-hidden mt-[-27rem]">
-                <div className='flex justify-center pt-28 w-[545] h-[87] z-1 relative top-[39rem]' style={{ zIndex: 9999 }}>
+            <div className="bg-[#1F1E1E] text-[#F4ECFF] overflow-hidden mt-[-50vh]">
+                <div className='flex justify-center pt-28 w-[545] h-[87] z-1 relative top-[41rem]' style={{ zIndex: 9999 }}>
                     <h1 className='flex text-[64px]'>SOBRE <p className="px-[24px]">A</p> ASTRAL</h1>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1970" height="1008" viewBox="0 0 1900 550" fill="none" className="top-[-rem] z-0" style={{ zIndex: 0 }}>

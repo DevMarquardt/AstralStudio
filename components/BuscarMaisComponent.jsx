@@ -2,7 +2,7 @@ export default function BuscarMaisComponent(){
     return(
         <>
 
-            <div className="h-[600px] bg-[#1F1E1E] font-semibold text-lg">
+            <div className="h-[90vh] bg-[#1F1E1E] font-semibold text-lg">
                 <h1 className="flex justify-center pt-10 text-white text-6xl ">BUSCAR POR MAIS JOGOS</h1>
                 <div className="flex justify-around pt-20">
                     <div className="pt-10 cursor-pointer"><img src="papersPlease.png" alt="" /></div>

@@ -23,7 +23,6 @@ export default function HomeInicialComponent() {
                 
             }else{
                 setIndex(index-1)
-                
             }
         }
 
@@ -44,7 +43,6 @@ export default function HomeInicialComponent() {
                 setIndex(index-1)
             }
         }
-        console.log(index)
         setImage(vetor[index])
         setText1(vetorTexto1[index])
         setText2(vetorTexto2[index])
@@ -98,7 +96,7 @@ export default function HomeInicialComponent() {
                             <div className="w-5 h-5 bg-white rounded-full bolas"></div>
                         </div>
                     </div>
-                    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" className="duration-200 hover:skew-y-[8deg] cursor-pointer" onClick={() => moveCarrosel(1)}>
+                    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" className="duration-200 hover:skew-y-[8deg] cursor-pointer" onClick={() => moveCarrosel(+1)}>
                         <path d="M13.125 7.87498L13.125 55.125C13.1265 55.6034 13.2585 56.0723 13.5066 56.4813C13.7548 56.8902 14.1098 57.2238 14.5335 57.446C14.9571 57.6682 15.4333 57.7707 15.9109 57.7424C16.3884 57.7141 16.8492 57.5561 17.2437 57.2854L51.3687 33.6604C52.7835 32.6812 52.7835 30.324 51.3687 29.3422L17.2437 5.71723C16.8501 5.44377 16.389 5.28341 15.9107 5.25356C15.4323 5.22372 14.955 5.32554 14.5304 5.54795C14.1059 5.77037 13.7504 6.10488 13.5026 6.51514C13.2549 6.92539 13.1243 7.39571 13.125 7.87498Z" fill="#F4ECFF" fill-opacity="0.6" />
                     </svg>
                 </div>

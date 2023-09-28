@@ -1,7 +1,7 @@
 export default function FooterComponent() {
     return (
         <>
-            <div className="h-[247px] bg-[#292828]">
+            <div className="h-[247px] bg-[#292828] overflow-hidden">
                 <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "flex-start" }}>
                     <div id="imagem-logo" style={{ alignSelf: "flex-start" }}>
                         <img src="logoTela.png" className="h-[90px] relative top-[1rem] pl-[2rem]" />
@@ -14,7 +14,7 @@ export default function FooterComponent() {
                         <div className="w-full relative top-[-6rem] pl-[102rem]">
                             <h3>Colaborador</h3>
                         </div>
-                        <div id="redes" style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", height: "100%" }} className="w-full relative top-[-1rem] pl-[12rem]">
+                        <div id="redes" className="w-[88vw] relative top-[-1rem] pl-[12rem] flex justify-center">
                             <div>
                                 <img src="redes.png" />
                             </div>
