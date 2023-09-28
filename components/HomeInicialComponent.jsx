@@ -2,13 +2,30 @@
 import { useState } from "react";
 
 export default function HomeInicialComponent() {
-    let vetor = ["https://assetsio.reedpopcdn.com/user-1007518-originalxoriginal-18-06-58.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp","https://images3.alphacoders.com/109/thumb-1920-1090801.jpg"
-    , "https://i.pinimg.com/originals/2c/8e/7c/2c8e7c856120a9e4687caad46bf6ec49.jpg", "https://i.pinimg.com/originals/60/07/a5/6007a516fddb512caa8a67597c675163.jpg",
-    "https://images8.alphacoders.com/868/868259.png"]
-    let vetorTexto1 = ["O BOM DA GUERRA","A VOLTA DOS QUE NÃO FORAM 2", "The Witcher 3: Wild Hunt", "Red Dead Redemption 2", "The Legend of Zelda: Breath of the Wild"]
-    let vetorTexto2 = [`Seja um verdadeiro Deus da guerra que almeja apenas pela paz, porém, durante sua jornada é assombrado por seu passado`,"Em um mundo pós-apocalíptico devastado por um fungo que transforma humanos em criaturas agressivas, Ellie embarca em uma jornada de vingança, enfrentando dilemas morais e as terríveis consequências de suas ações."
-    ,"O caçador de monstros Geralt de Rívia busca sua filha adotiva, enquanto enfrenta criaturas sobrenaturais e dilemas morais em um mundo medieval.", "No final do Velho Oeste, Arthur Morgan, um fora da lei, luta pela sobrevivência com sua gangue enquanto enfrenta a decadência do mundo dos foras da lei.", 
-    "Um herói chamado Link explora um vasto e aberto mundo de fantasia, combatendo inimigos e desvendando os mistérios de um reino arruinado." ]
+    let vetor = [
+
+            "https://rare-gallery.com/mocahbig/397294-wallpaper-kratos-god-of-war-art-4k-hd.jpg",
+            "https://static.wixstatic.com/media/4d9494_940dd310bc65447a9f481fdb41fbdaf8~mv2.jpg?dn=SoaLee2020_ellie-guitar.jpg", 
+            "https://i.pinimg.com/originals/2c/8e/7c/2c8e7c856120a9e4687caad46bf6ec49.jpg", 
+            "https://images.hdqwalls.com/wallpapers/red-dead-redemption-2-xbox-one-4k-eg.jpg",
+            "https://images8.alphacoders.com/868/868259.png"
+        ]
+
+    let vetorTexto1 = [
+        "O BOM DA GUERRA",
+        "A VOLTA DOS QUE NÃO FORAM 2", 
+        "The Witcher 3: Wild Hunt", 
+        "Red Dead Redemption 2", 
+        "The Legend of Zelda: Breath of the Wild"
+    ]
+
+    let vetorTexto2 = [
+        "Seja um verdadeiro Deus da guerra que almeja apenas pela paz, porém, durante sua jornada é assombrado por seu passado",
+        "Em um mundo pós-apocalíptico devastado por um fungo que transforma humanos em criaturas agressivas, Ellie embarca em uma jornada de vingança, enfrentando dilemas morais e as terríveis consequências de suas ações.",
+        "O caçador de monstros Geralt de Rívia busca sua filha adotiva, enquanto enfrenta criaturas sobrenaturais e dilemas morais em um mundo medieval.", 
+        "No final do Velho Oeste, Arthur Morgan, um fora da lei, luta pela sobrevivência com sua gangue enquanto enfrenta a decadência do mundo dos foras da lei.", 
+        "Um herói chamado Link explora um vasto e aberto mundo de fantasia, combatendo inimigos e desvendando os mistérios de um reino arruinado." 
+    ]
     
     const [index, setIndex] = useState(0);
     const [image, setImage] = useState(vetor[index])
